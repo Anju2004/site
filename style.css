@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+
+body {
+background: rgb(247, 247, 247);
+}
+section {
+	padding: 2rem 9%;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 6.5rem;
+}
+html::-webkit-scrollbar {
+	width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: var(--main);
+
+}
+
+html::-webkit-scrollbar-track {
+	background: black;
+}
+
+
+
+/*Global Variables*/
+:root {
+	--main: #fc0202;
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 1rem;
+	background: var(--main);
+	color: white;
+	cursor: pointer;
+	font-size: 3rem;
+	text-align: center;
+	padding: :0.8rem 3rem;
+}
+
+.btn:hover {
+	letter-spacing: 0.2rem;
+	background: rgb(43, 116, 226);
+
+}
+
+* {
+	font-family: "arial"
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	transition: 0.2s all linear;
+}
+
+*::selection {
+	background: var(--main);
+    color: blue;
+}
+
+.heading {
+	color: hotpink;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	padding: 1rem;
+	padding-bottom: 2rem;
+}
+.heading span {
+	text-transform: uppercase;
+	color: var(--main);
+}
+
+/* header*/
+.header {
+	background: #de87c4;
+	padding: 2rem 9%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .logo {
+	color: blueviolet;
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+.header .logo i {
+	padding-right: 0.5rem;
+	color: var(--main);
+}
+
+.header .SearchBox {
+	height: 5rem;
+	display: flex;
+}
+
+.header #Search {
+	height: 100%;
+	width: 100%;
+	font-size: 2rem;
+	color: gray;
+	padding: 1rem;
+	border: 0.1rem soild black;
+	text-transform: none;
+}
+
+.header .SearchBox label {
+	font-size: 2.5rem;
+	color: whitesmoke;
+	height: 100%;
+	width: 8rem;
+	line-height: 5rem;
+	background: var(--main);
+	text-align: center;
+	cursor: pointer;
+}
+
+.MainHeader {
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 9%;
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+
+.MainHeader .navbar a {
+	font-size: 2rem;
+	padding: 0.5rem 1.5rem;
+	color: brown;
+	border-radius: o.5rem;
+}
+
+.MainHeader .navbar a:hover {
+	background: var(--main);
+	color: gray ;
+}
+#menubtn {
+	font-size: 3rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	color: brown;
+	border: 0.1rem solid brown;
+	display: none;
+}
+
+.MainHeader .icons i {
+	color: blueviolet;
+	font-size: 2.5rem;
+	padding-left: 1rem;
+}
+
+.MainHeader .icons i:hover {
+	color: var(--main);
+	cursor: pointer;
+
+}
+
+/*Home*/
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.home .content {
+	flex: 1 1 40rem;
+}
+.home .content h2 {
+	color: gray;
+	font-size: 3rem;
+
+}
+
+.home .content h1 {
+	font-size: 5rem;
+	color: rgb(255, 0, 106);
+}
+
+.home .img img {
+	width: 100;
+}
+
+/*Products*/
+.products {
+	margin-bottom: 200px;
+}
+
+.products .boxContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+.products .boxContainer .box {
+	flex: 1 1 30rem;
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+	position: relative;
+	overflow: hidden;
+	border: 0.1rem solid rgba(0, 0, 0, 0.3);
+	padding: 2rem;
+	text-align: center;
+	border-radius: 0.5rem;
+}
+
+.products .boxContainer .box img {
+	height: 20rem;
+}
+
+.products .boxContainer .Dis {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background: var(--main);
+	padding: 0.7rem 1rem;
+	font-size: 2rem;
+	color: white;
+	
+}
+
+.products .box .icons {
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+}
+
+.products .box:hover .icons {
+	right: 1rem;
+}
+.products .boxContainer .box .icons i {
+	display: block;
+	height: 4.5rem;
+	width: 4.5rem;
+	line-height: 4.5rem;
+	font-size: 1.7rem;
+	background: rgba(0, 0, 0, 0.06);
+	color: blueviolet;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-top: 0.7rem;
+
+}
+
+.products .boxContainer .box .icons i:hover {
+	color: pink;
+	background: var(--main);
+
+}
+
+.products  .box .h3 {
+	font-size: 2.5rem;
+	color: blueviolet;
+}
+
+.products .box .stars i {
+	font-size: 1.7rem;
+	padding: 1rem 0.1rem;
+	color: gold;
+}
+
+.products .box .price {
+	font-size: 2rem;
+	color: gray;
+	padding: 0.5rem 0;
+
+}
+
+.products .box .price span {
+	text-decoration: line-through;
+	font-size: 1.5rem;
+	color: grey;
+
+}
+
+.products .box .quantity {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+}
+
+.products .box .quantity span {
+	font-size: 1.7rem;
+	padding: 0 0.7rem;
+
+}
+
+.products .box .quantity input {
+	padding: 0.5rem;
+	color: blueviolet;
+	background: rgba(0, 0, 0, 0.06);
+	font-size: 1.5rem;
+	font-weight: 700;
+	border: 0.1rem solid rgba(0, 0, 0, 0.02);
+
+}
+
+/*category*/
+.category {
+	margin-top: 100px;
+}
+
+.category .boxContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	padding-top: 1rem;
+}
+
+.category .boxContainer img {
+	width: 20rem;
+	margin: 0.5rem 0;
+}
+
+.category .boxContainer .box {
+	border: 0.1rem solid rgba(0, 0, 0, 0.3);
+	text-align: center;
+	padding: 2rem;
+	flex: 1 1 25rem;
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+	border-radius: 0.5rem;
+}
+
+.category .boxContainer .box h3 {
+	font-size: 3.5rem;
+	color: blueviolet;
+}
+
+.category .boxContainer .box p {
+	color: gray;
+	padding: 0.5rem 0;
+	font-size: 2rem;
+}
+
+/*Contact*/
+.content {
+	margin-bottom: 150px;
+}
+
+.content form {
+	border: 0.1rem solid rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.content form .inputBox {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.content form input,textarea {
+	padding: 1rem;
+	font-size: 1.7rem;
+	background: white;
+	text-transform: none;
+	margin: 1rem 0;
+	width: 49%;
+	border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+.content textarea {
+	width: 100%;
+	resize: none;
+	height: 17rem;
+}
+
+/*Deal*/
+.deal {
+	background: url(images/b1.jpg)
+	no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+	margin-bottom: 100px;
+}
+
+.deal .content {
+	max-width: 50rem;
+}
+
+.deal .content h1 {
+	color: blueviolet;
+	font-size: 1.7rem;
+}
+
+.deal .content .Counter {
+	display: flex;
+	padding: 0.5rem 0;
+	gap: 1rem;
+
+}
+
+.deal .content .Counter .box {
+	text-align: center;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8);
+	border: 0.1rem solid rgba(0, 0, 0, 0.3);
+	width: 9rem;
+}
+
+.deal .content .Counter .box h3{
+	color: blueviolet;
+	font-size: 5rem;
+	height: 7rem;
+	line-height: 7rem;
+	background-color: white;
+	width: 100%;
+}
+.deal .Counter .box span {
+	display: block;
+	background-color: var(--main);
+	font-size: 2rem;
+	padding: 0.5rem;
+	width: 100%;
+	color: white;
+}
+
+.title {
+	color: rgb(8, 158, 101);
+}
+.button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 20%;
+  }
+  
+  .button:hover {
+	background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+  }
+  .column .card{
+	  align-items: center;
+  }
+  .contact {
+	text-align: center;
+  }
+/*Media*/
+@media (max-width: 1200px) {
+		html{
+			font-size: 55%;
+		}	
+}
+
+@media (max-width :991px) {
+	section {
+		padding: 2rem;
+	}
+	.header .MainHeader {
+		padding: 2rem;
+	}
+}
+
+@media (max-width:768px) {
+	#MenuBtn {
+		display: inline;
+	}
+	
+	.MainHeader .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: blueviolet;
+		padding: 1rem 2rem;
+	}
+	.MainHeader .navbar a {
+		display: block;
+		font-size: 2.5rem;
+		text-align: center;
+		background: white;
+		margin: 1.5rem 0;
+		padding: 0;
+	}
+	.home .content {
+		text-align: center;
+	}
+	.home .content h3 {
+		font-size: 3rem;
+	}
+	.deal {
+		background-position: left;
+	}
+	.deal .Counter {
+		max-width: 100%;
+		text-align: center;
+	}
+	.deal .content .Counter {
+		justify-content: center;
+	}
+	.content .inputBox input {
+		width: 100%;
+	}
+}
+@media (max-width: 460px) {
+	html {
+
+		font-size: 3rem;
+	}
+	.header .SearchBox {
+		width: 100%;
+		margin-top: 2rem;
+	}
+}
+	
